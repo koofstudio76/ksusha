@@ -5,7 +5,7 @@
     set(key, value){ try { localStorage.setItem(key, value); } catch(e) {} }
   };
 
-  const savedTheme = safeStorage.get('aniskin-theme');
+  const savedTheme = safeStorage.get('muslanova-theme');
   if(savedTheme){ root.setAttribute('data-theme', savedTheme); }
 
   const refreshScroll = () => {
@@ -16,7 +16,7 @@
 
   const setTheme = (theme) => {
     root.setAttribute('data-theme', theme);
-    safeStorage.set('aniskin-theme', theme);
+    safeStorage.set('muslanova-theme', theme);
     refreshScroll();
   };
 
@@ -44,7 +44,7 @@
   };
 
   const runDataPages = () => {
-    const data = window.ANISKIN_DATA;
+    const data = window.MUSLANOVA_DATA;
     if(!data) return;
 
     const pressMap = new Map((data.pressLinks || []).map(item => [item.id, item]));

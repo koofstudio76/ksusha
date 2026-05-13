@@ -6,8 +6,8 @@
     remove(key){ try { localStorage.removeItem(key); } catch(e) {} }
   };
 
-  const THEME_KEY = 'aniskin-theme-v2';
-  safeStorage.remove('aniskin-theme');
+  const THEME_KEY = 'muslanova-theme-v2';
+  safeStorage.remove('muslanova-theme');
   const savedTheme = safeStorage.get(THEME_KEY) || 'light';
   root.setAttribute('data-theme', savedTheme);
 
